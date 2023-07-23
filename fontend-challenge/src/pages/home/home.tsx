@@ -38,10 +38,23 @@ const Home: FC<PropsFromRedux> = ({ learningPaths, setLearningPaths }) => {
 
   return (
     <div className="App">
-      <div className="learning-paths-container">
-        {learningPaths.map((learningPath) => (
-          <LearningPathCard key={learningPath.uid} learningPath={learningPath} />
-        ))}
+      <div className={error == null?"learning-paths-container":"learning-paths-container-error"}>
+        {
+          error == null ?
+            <>
+              {learningPaths.map((learningPath) => (
+                <LearningPathCard key={learningPath.uid} learningPath={learningPath} />
+              ))}
+            </>
+            :
+            <>
+              <div className='error'>
+                Something Wrong with getting the catalogs........
+              </div>
+            </>
+          
+        }
+
       </div>
     </div>
   );

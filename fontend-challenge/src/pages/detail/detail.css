@@ -1,0 +1,59 @@
+.detail-container {
+    display: flex;
+    margin-left: 4%;
+    width: 100%;
+  }
+  
+  .detail-card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+   
+  }
+
+  .imageAndtitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 2%;
+  }
+  
+  .detail-card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+  
+  .detail-card-title {
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+  
+  .detail-card-item {
+    display: flex;
+    width: 40%;
+    gap: 2%;
+    margin-top: 2%;
+  }
+  
+  .detail-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 0.4%;
+  }
+
+  .learning-path-card-date,
+.learning-path-card-modules {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+  

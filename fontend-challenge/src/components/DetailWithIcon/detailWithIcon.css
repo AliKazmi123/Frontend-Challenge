@@ -1,0 +1,13 @@
+  
+  .detail-card-item {
+    display: flex;
+    width: 40%;
+    gap: 2%;
+    margin-top: 2%;
+  }
+  
+  .detail-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 0.4%;
+  }
