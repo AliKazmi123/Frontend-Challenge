@@ -17,22 +17,23 @@ const Detail: FC = () => {
 
   return (
     <div className="detail-container">
-      <div className="detail-card">
+     
+       <div className="detail-card">
         <div className='imageAndtitle'>
-          <img className="detail-card-image" src={detail.icon_url} alt={detail.title} />
+          <img className="detail-card-image" src={detail?.icon_url} alt={detail?.title}/>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h2 className="detail-card-title">{detail.title}</h2>
+            <h2 className="detail-card-title">{detail?.title}</h2>
             <div className="learning-path-card-date">
               <CalendarOutlined />
-              {formatDate(detail.last_modified)}
+              {formatDate(detail?.last_modified)}
             </div>
           </div>
 
         </div>
 
         <div className="detail-card-item">
-          <FileTextOutlined className='detail-icon' />
-          <span>{detail.summary}</span>
+          <FileTextOutlined role="img" className='detail-icon' />
+          <span>{detail?.summary}</span>
         </div>
         <DetailWithIcon heading={'Courses'} list={detail?.subjects} />
         <DetailWithIcon heading={'Modules'} list={detail?.modules} />
@@ -41,7 +42,7 @@ const Detail: FC = () => {
         <DetailWithIcon heading={'Levels'} list={detail?.levels} />
 
 
-      </div>
+      </div> 
     </div>
   );
 }

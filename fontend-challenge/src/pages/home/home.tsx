@@ -38,7 +38,7 @@ const Home: FC<PropsFromRedux> = ({ learningPaths, setLearningPaths }) => {
 
   return (
     <div className="App">
-      <div className={error == null?"learning-paths-container":"learning-paths-container-error"}>
+      <div role='homePage' className={error == null?"learning-paths-container":"learning-paths-container-error"}>
         {
           error == null ?
             <>
